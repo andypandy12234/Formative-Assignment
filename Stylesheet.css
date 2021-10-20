@@ -1,15 +1,17 @@
 body {
-    background-color: powderblue;
+
+    background-color: rgb(138, 138, 138);
+    
   }
   h1 {
-    color: rgb(0, 17, 255);
+    color: rgb(255, 255, 255);
     font-family: verdana;
     font-size: 300%;
     
   }
   p {
-    color: red;
-    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 0, 0);
+    font-family: verdana;
     font-size: 160%;
-    border: 2px solid powderblue;
+    
   }
