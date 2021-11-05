@@ -1,29 +1,27 @@
 <!--Bootstrap Templates used from w3 schools-->
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
   
   <title>Climate Change Formative Assignment</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="Stylesheet2.css">
+  
+  <link rel="stylesheet" href="Stylesheet.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
+
+<!--I used a bootstrap navbar template from w3 schools-->
+
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
+      
       <a class="navbar-brand" href="#myPage">Home</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -60,7 +58,7 @@
         
     </div>
   <div class="col-sm-3">
-    <span class="glyphicon glyphicon-globe logo"></span>
+    <img src="globe.png" alt="Globe" style="width:300px;height:300px;">
   </div>
     <div class="row">
         <div class="col-sm-12">
@@ -80,7 +78,7 @@
 <div id = "impacts" class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-fire logo slideanim" style="color: crimson;"></span>
+      <img src="Future-Earth.jpg" style="width:500px;height:333px;" class="img-circle" alt="Future Earth" >
     </div>
     <div class="col-sm-8">
       <h2>Impacts</h2><br>
@@ -103,19 +101,22 @@
 </div>
 
 
+
+<!--I used a carousel template from w3 schools-->
+
 <div id="solutions" class="container-fluid text-center">
   <h2>Possible solutions to climate change</h2>
   
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <div id="Carousel1" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-      <li data-target="#myCarousel" data-slide-to="6"></li>
-      <li data-target="#myCarousel" data-slide-to="7"></li>
+      <li data-target="#Carousel1" data-slide-to="0" class="active"></li>
+      <li data-target="#Carousel1" data-slide-to="1"></li>
+      <li data-target="#Carousel1" data-slide-to="3"></li>
+      <li data-target="#Carousel1" data-slide-to="4"></li>
+      <li data-target="#Carousel1" data-slide-to="5"></li>
+      <li data-target="#Carousel1" data-slide-to="6"></li>
+      <li data-target="#Carousel1" data-slide-to="7"></li>
     </ol>
 
     <!-- Wrapper for slides -->
@@ -144,11 +145,11 @@
     </div>
 
     <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <a class="left carousel-control" href="#Carousel1" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <a class="right carousel-control" href="#Carousel1" role="button" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
@@ -157,7 +158,7 @@
   </div>
 </div>
 
-
+<!--I used a tab template from w3 schools-->
 <div id="solutions" class="container-fluid text-center bg-grey">
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#vid1">Video 1</a></li>
@@ -197,49 +198,11 @@
 
 
 <footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
   <p>Bootstrap templates used from W3 Schools</p>
   
 </footer>
 
-<script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links in navbar + footer link
-      $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-    
-          // Store hash
-          var hash = this.hash;
-    
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 900, function(){
-       
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-      
-      $(window).scroll(function() {
-        $(".slideanim").each(function(){
-          var pos = $(this).offset().top;
-    
-          var winTop = $(window).scrollTop();
-            if (pos < winTop + 600) {
-              $(this).addClass("slide");
-            }
-        });
-      });
-    })
-    </script>
+
 
 </body>
 </html>
