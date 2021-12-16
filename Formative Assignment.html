@@ -9,12 +9,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   
   <link rel="stylesheet" href="Stylesheet.css">
+  <script src="https://d3js.org/d3.v5.min.js" defer></script>
+  <script src="https://d3js.org/d3-scale.v3.min.js" defer></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
+  <script src="script.js" defer></script>
 </head>
 
-
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!--I used a bootstrap navbar template from w3 schools-->
 
@@ -35,14 +37,60 @@
   </div>
 </nav>
 
-<div class="jumbotron text-center bg-lime" >
-  <h1>Climate Change</h1> 
-  <p>Summative Assignment</p> 
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="31189.jpg" alt="Photo of nature" width="1200" height="700">
+      <div class="carousel-caption text-center ">
+        <p>Climate Change</p>
+        
+      </div>      
+    </div>
+
+    <div class="item">
+      <img src="31190.jpg" alt="Chicago" width="1200" height="700">
+      <div class="carousel-caption">
+        
+        <p>Climate Change</p>
+      </div>      
+    </div>
   
+    <div class="item">
+      <img src="31191.jpg" alt="Los Angeles" width="1200" height="700">
+      <div class="carousel-caption">
+        
+        <p>Climate Change</p>
+      </div>      
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="container">
+  <svg></svg>
+
+
 </div>
 
 
-<div id="general" class="container-fluid bg-grey">
+<div id="general" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
       <h2>What is climate change?</h2><br>
@@ -75,7 +123,7 @@
 
 <!--Impact section--> 
 
-<div id = "impacts" class="container-fluid bg-lime">
+<div id = "impacts" class="container-fluid bg-grey">
   <div class="row">
     
     
@@ -109,7 +157,7 @@
 
 <!--I used a carousel template from w3 schools-->
 
-<div id="solutions" class="container-fluid text-center bg-grey">
+<div id="solutions" class="container-fluid text-center">
   <h2>Possible solutions to climate change</h2>
   
   <div id="Carousel1" class="carousel slide text-center" data-ride="carousel">
@@ -164,7 +212,7 @@
 </div>
 
 <!--I used a tab template from w3 schools-->
-<div id="solutions" class="container-fluid text-center bg-lime">
+<div id="solutions" class="container-fluid text-center bg-grey">
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#vid1">Video 1</a></li>
         <li><a data-toggle="tab" href="#vid2">Video 2</a></li>
@@ -202,7 +250,7 @@
 
 
 
-<footer class="container-fluid text-center" bg-grey>
+<footer class="container-fluid text-center">
   <p>Bootstrap templates used from W3 Schools</p>
   
 </footer>
