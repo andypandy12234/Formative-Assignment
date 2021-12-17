@@ -1,2 +1,3 @@
-# Formative-Assignment
-I made a start on the assignment, we need to add bootstrap to it and make the page mobile friendly
+# Summative
+The web page should work just by opening the Formative assignment document after unziping, the dataset is included in my javascript code.
+
